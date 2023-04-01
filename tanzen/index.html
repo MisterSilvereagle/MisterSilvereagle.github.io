@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tanzen</title>
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			background-color: white;
+			margin: 0;
+			font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+		}
+		.wrapper {
+			height: 100%;
+			width: 100%;
+			display: table;
+		}
+		.wrapper-inner {
+			height: 100%;
+			vertical-align: middle;
+			display: table-cell;
+			width: 50%;
+			margin: 0 auto;
+		}
+		.center-box {
+			border-radius: 4.5px;
+			background-color: #141321;
+			width: fit-content;
+			height: fit-content;
+			color: #fe428e;
+			padding: 5px;
+		}
+		.outer {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.drating {
+			text-align: center;
+		}
+		.dname {
+			color: #a9fef7;
+		}
+		table {
+			border-collapse:collapse; 
+		}
+		table thead th { 
+			border-bottom: 1px solid #fff; 
+		}
+
+		@media screen and (min-width: 634px) {
+			.center-box {
+				scale: 3;
+			}
+		}
+
+		@media screen and (max-width: 633px) {
+			.center-box {
+				scale: 2;
+			}
+		}
+
+		@media screen and (max-width: 419px) {
+			.center-box {
+				scale: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="wrapper-inner">
+	<div class="outer">
+	<div class="center-box">
+		<table>
+			<thead>
+				<tr>
+					<td></td>
+					<th>
+						Rating
+					</th>
+					<th>
+						Tanz
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				</tr>
+				<tr>
+					<td>
+						😍
+					</td>
+					<td style="color: #c1f12e;" class="drating">
+						Yes
+					</td>
+					<td class="dname">
+						Wiener Walzer, Discofox
+					</td>
+				</tr>
+				<tr>
+					<td>
+						🤩
+					</td>
+					<td style="color: #f8d847;" class="drating">
+						Amazing
+					</td>
+					<td class="dname">
+						Tango, Foxtrot, Rumba
+					</td>
+				</tr>
+				<tr>
+					<td>
+						👌
+					</td>
+					<td style="color: #e34c26;" class="drating">
+						Ok
+					</td>
+					<td class="dname">
+						Langsamer Walzer, ChaCha
+					</td>
+				</tr>
+				<tr>
+					<td>
+						😐
+					</td>
+					<td style="color: #f34b7d;" class="drating">
+						Meh
+					</td>
+					<td class="dname">
+						Jive, Salsa
+					</td>
+				</tr>
+				<tr>
+					<td>
+						👎
+					</td>
+					<td style="color: #a97bff;" class="drating">
+						Trash
+					</td>
+					<td class="dname">
+						Samba
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
+
+<!--
+Wiener Walzer, Langsamer Walzer, Foxtrot, Tango // Standard
+ChaCha, Rumba, Jive, Samba, Salsa // Latein
+Discofox
+-->
