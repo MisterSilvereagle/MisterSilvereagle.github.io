@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Personal Portfolio vCard Template">
 	<meta name="author" content="MisterSilvereagle">
 
-	<title>My website</title>
+	<title>Definitely not copy pasted website</title>
 
   <!-- Web Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -37,44 +37,38 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
 
+  <script type="text/javascript">
+    setTimeout(() => {
+      const box = document.getElementById('tt-preloader');
+      // 👇️ removes element from DOM
+      box.style.opacity = 0;
+
+      // 👇️ hides element (still takes up space on page)
+      // box.style.visibility = 'hidden';
+    }, 1000); // 👈️ time in milliseconds
+    setTimeout(() => {
+      const box = document.getElementById('tt-preloader');
+      // 👇️ removes element from DOM
+      box.style.display = "none";
+
+      // 👇️ hides element (still takes up space on page)
+      // box.style.visibility = 'hidden';
+    }, 2000); // 👈️ time in milliseconds
+
+  </script>
+
 </head>
 
 <body>
 	<!-- Preloader -->
-	<div id="tt-preloader">
+	<div id="tt-preloader" style="transition: opacity 1s ease;/* display:none;*/">
 		<div id="pre-status">
 			<div class="preload-placeholder"></div>
 		</div>
 	</div>
 
-	<!-- Home Section -->
-	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-		<div class="intro">
-			<div class="intro-sub">I am X</div>
-			<h1>Creative <span>Designer</span></h1>
-			<p>I am a fully professional freelance creative User Interface Designer &amp; Developer<br> Involving with latest web designing and technologies is a great <br> feel free to contact creative.</p>
-
-      <div class="social-icons">
-        <ul class="list-inline">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-behance"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-        </ul>
-      </div> <!-- /.social-icons -->
-		</div>
-
-		<div class="mouse-icon">
-			<div class="wheel"></div>
-		</div>
-	</section><!-- End Home Section -->
-
-
-
-
 	<!-- Navigation -->
-	<header class="header">
+	<header class="header" style="position: fixed; box-shadow: 0px 4px 10px grey;">
 		<nav class="navbar navbar-custom" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -101,6 +95,29 @@
 			</div><!-- .container -->
 		</nav>
 	</header><!-- End Navigation -->
+
+  <!-- Home Section -->
+  <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" style="display: none;">
+    <div class="intro">
+      <div class="intro-sub">I am X</div>
+      <h1>Creative <span>Designer</span></h1>
+      <p>I am a fully professional freelance creative User Interface Designer &amp; Developer<br> Involving with latest web designing and technologies is a great <br> feel free to contact creative.</p>
+
+      <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+      </div> <!-- /.social-icons -->
+    </div>
+
+    <div class="mouse-icon">
+      <div class="wheel"></div>
+    </div>:
+  </section><!-- End Home Section -->
 
 
     <!-- About Section -->
@@ -764,7 +781,7 @@
 
 
     <!-- Hire Section -->
-    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" style="display: none;">
       <div class="hire-section-bg">
         <div class="container">
           <div class="row">
@@ -780,7 +797,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
+    <section id="contact" class="contact-section section-padding hire-section-bg">
       <div class="container">
         <h2 class="section-title wow fadeInUp">Get in touch</h2>
 
